@@ -2,6 +2,9 @@
 /* Sub-Folder Imports */
 /* ============================================= */
 /* ============================================= */
+/* Utilities Imports */
+/* ============================================= */
+/* ============================================= */
 /* Base Imports */
 /* ============================================= */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -563,7 +566,7 @@ a {
 }
 
 .theme.col-11 {
-  background-color: #51ddfc;
+  background-color: #58e1c1;
 }
 
 .theme.col-12 {
@@ -677,8 +680,5 @@ a {
     margin-right: initial;
   }
 }
-/* ============================================= */
-/* Utilities Imports */
-/* ============================================= */
 
 /*# sourceMappingURL=style.css.map */
