@@ -21,10 +21,8 @@
   border-radius: 5px;
 }
 
-@each $theme, $color in $themes {
-  .#{$theme} {
-      background-color: $color;
-  }
+.theme {
+  @include col-themes($themes);
 }
 
 .card {
