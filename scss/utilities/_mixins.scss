@@ -1,9 +1,56 @@
 // Colors
-
 @mixin col-themes($map) {
   @each $theme, $color in $map {
     &.#{$theme} {
       background-color: $color;
+    }
+  }
+}
+
+// Margins
+@mixin margins(
+  $top: null, 
+  $right: null,
+  $bottom: null, 
+  $left: null) { 
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// Flexbox
+@mixin flexcont(
+  $dsp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,
+  $alignitm: null) {
+    display: $dsp;
+    flex-direction: $dir; 
+    flex-wrap: $wrap;
+    justify-content: $just;
+    align-items: $alignitm;
+}
+
+@mixin flexitem(
+  $grow: null,
+  $basis: 100%,
+  $shrink: null,
+  $order: null,
+  $alignslf: null) {
+    flex-grow: $grow;
+    flex-basis: $basis;
+    flex-shrink: $shrink;
+    order: $order;
+    align-self: $alignslf;
+}
+
+// Flex-basis cols
+@mixin colswidth($map) {
+  @each $col, $increment in $map {
+    &-#{$col} {
+      flex-basis: $increment;
     }
   }
 }

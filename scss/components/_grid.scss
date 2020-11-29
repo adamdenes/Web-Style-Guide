@@ -8,14 +8,13 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include flexcont($dir: column);
   padding: 1em 10px;
 }
 
 [class^=col] {
   margin-top: 10px;
-  flex-basis: 100%;
+  @include flexitem();
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
@@ -26,5 +25,5 @@
 }
 
 .card {
-  flex-basis: 100%;
+  @include flexitem();
 }
