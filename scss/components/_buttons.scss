@@ -15,20 +15,25 @@
 
 .default {
   background-color: $aqua;
+  @include hovering($aqua);
 }
 
 .error {
   background-color: $error;
+  @include hovering($error);
 }
 
 .info {
   background-color: $info;
+  @include hovering($info);
 }
 
 .success {
   background-color: $success;
+  @include hovering($success);
 }
 
 .warning {
   background-color: $warning;
+  @include hovering($warning);
 }

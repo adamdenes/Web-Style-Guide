@@ -70,3 +70,11 @@
   max-width: 100%; 
   @content;
 }
+
+// Hover effect
+@mixin hovering($clr, $pc: 15%) {
+  &:hover {
+    background-color: lighten($clr, $pc);
+    transition: background-color .4s ease-in;
+  }
+}
