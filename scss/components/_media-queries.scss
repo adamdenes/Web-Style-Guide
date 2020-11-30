@@ -5,20 +5,19 @@
 @media (min-width: $brk-desktop) {
 
   .container {
+    @include centered();
     max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include centered();
   }
 
   .row {
     @include flexcont($dir: row);
+    .btn + .btn {
+      margin-left: 10px;
+    }
   }
 
   [class^=col] {
@@ -36,17 +35,13 @@
 
   .nav {
     @include flexcont($dir: row, $just: flex-end, $alignitm: center);
-    .nav-link {
+    &-link {
       @include flexitem($basis: 100px);
     }
   }
 
   .btn {
     padding: 10px 30px;
-  }
-
-  .btn + .btn {
-    margin-left: 10px;
   }
 
   .logo {

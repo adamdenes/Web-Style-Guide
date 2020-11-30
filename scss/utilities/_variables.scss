@@ -13,6 +13,13 @@ $warning: #fd7856;
 // Media query breakpoint
 $brk-desktop: 768px;
 
+// Margin
+$margin-left: auto;
+$margin-right: auto;
+
+// Font-stack
+$font-family-stack: 'Lato', sans-serif;
+
 // Theme colors for grid
 $themes: (
     'col-1':  $info,

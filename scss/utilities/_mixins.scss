@@ -54,3 +54,19 @@
     }
   }
 }
+
+// Center
+@mixin centered() {
+  display: block;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+  @content;
+}
+
+// Images
+@mixin imgages() {
+  @include centered();
+  margin-top: 10px;
+  max-width: 100%; 
+  @content;
+}
